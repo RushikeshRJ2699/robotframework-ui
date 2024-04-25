@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.2 on win32)" generated="20240425 10:56:21.714" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo1" source="C:\Users\Rushi Reddy\Desktop\Robot framework Main\Demo1.robot">
+<test id="s1-t1" name="Open Google On Chrome and Search" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240425 10:56:21.988" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<msg timestamp="20240425 10:56:22.512" level="WARN">The chromedriver version (122.0.6261.57) detected in PATH at C:\Users\Rushi Reddy\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.124); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240425 10:56:21.988" endtime="20240425 10:56:35.048"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240425 10:56:35.048" endtime="20240425 10:56:35.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='color-white font-title type-uppercase type-no-underline px-medium']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240425 10:56:35.171" level="INFO">Clicking element '//a[@class='color-white font-title type-uppercase type-no-underline px-medium']'.</msg>
+<status status="PASS" starttime="20240425 10:56:35.171" endtime="20240425 10:56:35.293"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//h1[@class='type-center mt-large mb-large color-white']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240425 10:56:35.293" endtime="20240425 10:56:35.326"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[normalize-space()='GitHub']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240425 10:56:35.327" endtime="20240425 10:56:35.634"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240425 10:56:37.636" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240425 10:56:35.635" endtime="20240425 10:56:37.636"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[normalize-space()='GitHub']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240425 10:56:37.637" level="INFO">Clicking element '//a[normalize-space()='GitHub']'.</msg>
+<status status="PASS" starttime="20240425 10:56:37.637" endtime="20240425 10:56:41.985"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240425 10:56:43.987" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240425 10:56:41.986" endtime="20240425 10:56:43.987"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20240425 10:56:43.989" endtime="20240425 10:56:44.017"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240425 10:56:46.019" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240425 10:56:44.018" endtime="20240425 10:56:46.019"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240425 10:56:46.019" endtime="20240425 10:56:48.194"/>
+</kw>
+<status status="PASS" starttime="20240425 10:56:21.987" endtime="20240425 10:56:48.196"/>
+</test>
+<status status="PASS" starttime="20240425 10:56:21.716" endtime="20240425 10:56:48.197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo1">Demo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240425 10:56:22.512" level="WARN">The chromedriver version (122.0.6261.57) detected in PATH at C:\Users\Rushi Reddy\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.124); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
